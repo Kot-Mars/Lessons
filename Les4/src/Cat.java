@@ -1,4 +1,4 @@
-public class Cat extends Animal {
+public class Cat extends Animal implements Run  {
     private  int age;
     private String colorEye;
     private int weight, height;
@@ -87,5 +87,10 @@ public class Cat extends Animal {
            System.out.println("Причина смерти: Хозяин прибил кошку");
            this.status = "dead";
        }
+    }
+
+    @Override
+    public void run() {
+
     }
 }
